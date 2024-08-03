@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model viewer 3D</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    model-viewer {
+      width: 100%;
+      height: 100vh;
+      background-color: #20180C;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer src="mammuthus_primigenius_blumbach.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate camera-orbit="-52.26deg 80.93deg 11m" field-of-view="21.78deg">
+    <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+      <button slot="ar-button" id="ar-button">View in your space</button>
+  </model-viewer>
+</body>
+</html>
